@@ -1,0 +1,22 @@
+.col-md-4{
+    margin-left: 65%;
+}
+
+.col-md-4 img{
+    height: 450px;
+    margin-top: -18%;
+}
+
+.col-md-6{
+    margin-top: -30%;
+}
+
+/* h2{
+    margin-left: 38%;
+    margin-top: -10%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: yellow;
+    z-index: -1;
+    text-shadow: 5px 2px 3px rgb(0, 0, 0);
+} */

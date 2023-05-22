@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col">
+       <div class="col-2">
+              <input type="text" [(ngModel)]="searchKey" placeholder="Search Pokemon">
+       </div>
+       <p>
+        Pokémon are mysterious creatures filled with many secrets. Some Pokémon live alongside humans and some live in the wild in grassy fields, caves, or the sea, but much about their ecology that remains unknown. One of their main features is that they can be caught using a Poké Ball, which allows them to be carried around.
+       </p>
+    </div>   
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-5"  *ngFor="let pokemon of allPokemon | filter :searchKey:'name' ">
+                <div class="card-body me-5">
+                    <div class="card ">
+                        <div class="row mt-2 mb-2">
+                            <div class="col-md-4">
+                                <img class="poke-image mt-5 ms-5" [src]="pokemon.sprites.front_default" alt="pokemon">
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="fw-bolder">Name :</span> {{pokemon.name}}</li>
+                                    <li class="list-group-item"><span class="fw-bolder">Height : </span>{{pokemon.height}}</li>
+                                    <li class="list-group-item"><span class="fw-bolder">Abilities :</span> {{pokemon.abilities[0].ability['name']}} </li>
+                                    <li class="list-group-item"><span class="fw-bolder">order : </span>{{pokemon.order}}</li>
+                                    <li class="list-group-item"><span class="fw-bolder">id : </span>{{pokemon.id}}</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 mt-5 pt-5">
+                                <a routerLink="view-pokemon/{{pokemon.order}}"><img src="https://cdn-icons-png.flaticon.com/512/528/528101.png" alt=""></a>
+                            </div>
+                        </div>
+                </div >
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+</div>

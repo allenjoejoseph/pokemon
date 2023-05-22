@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="col-md-4">
+                <img [src]="pokemon.sprites.front_default
+                " alt="">
+                <!-- <h2>{{pokemon.name}}</h2> -->
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="fw-bolder">Name :</span > {{pokemon.name}} </li>
+                    <li class="list-group-item"><span class="fw-bolder">Height :</span > {{pokemon.height}} </li>
+                    <li class="list-group-item"><span class="fw-bolder">Abilities :</span > {{pokemon.abilities[0].ability.name}}, {{pokemon.abilities[1].ability.name}}  </li>
+                    <li class="list-group-item"><span class="fw-bolder">Moves :</span > {{pokemon.moves[0].move.name}}, {{pokemon.moves[1].move.name}}, {{pokemon.moves[2].move.name}} </li>
+                    <li class="list-group-item"><span class="fw-bolder">Type :</span > {{pokemon.types[0].type.name}}  </li>
+                    <li class="list-group-item"><span class="fw-bolder">Weight :</span > {{pokemon.weight}} </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

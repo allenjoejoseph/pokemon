@@ -1,0 +1,53 @@
+.col-2{
+    display: flex;
+    float: right;
+    margin-top: -110px ;
+    margin-right: 100px;
+}
+
+.col-2 input{
+    color: yellow;
+    padding: 8px 65px 8px 20px;
+    border: none;
+    border-radius: 16px;
+    border-bottom: 2px solid rgb(196, 150, 0);
+    outline: none;
+    background-color: rgb(41, 41, 41)
+}
+
+input::placeholder{
+    color: rgb(255, 255, 0);
+    opacity: 0.75;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+p{
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    padding: 3px 1% 3px 1.5%;
+    font-size: 17.5px;
+    font-weight: 500;
+    color: rgb(230, 230, 0);
+    opacity: 0.9;
+    background-color: rgb(12, 12, 12,0.9);
+    border-radius: 25px;
+    border-bottom: 2px solid rgb(196, 150, 0);
+}
+
+.poke-image{
+    height: 100px;
+}
+
+.container{
+    margin-left: 7%;
+    
+}
+
+.col-md-2 a img{
+    height: 27px;
+    margin-left: 20px;
+}
+
